@@ -1,4 +1,4 @@
-Console "Hello Word" in document.ready function
+Console "Hello Word" in document.ready function <br>
 Select a ID name "#test" and add class "load" when DOM is loaded
 Change the color of element which class name end with "-new"
 Disable submit button using jquery attr method

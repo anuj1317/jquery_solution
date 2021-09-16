@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Question-9</title>
+</head>
+<body>
+    <p>Select food from the list.</p>
+    <select>
+        <option value="">Select items</option>
+        <option value="">Burger</option>
+        <option value="">Pizza</option>
+        <option value="">Cheese Omelette</option>
+        <option value="">Bread Butter</option>
+    </select>
+    <p>So you want to have <p id="ye"> Burger</p></p>
+    <script type="text/javascript"
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+
+    </script>
+    <script>
+        $(document).ready(function() {
+            
+                $('select').on('change', function() {
+                $("#ye").append(this.value+ "<br>")
+            });
+        });    
+    </script>
+</body>
+</html>

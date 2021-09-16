@@ -1,0 +1,31 @@
+<html lang="en">
+  <head>
+    <title>Question-12</title>
+  </head>
+  <body>
+    <div class="panel">
+      <ul>
+        <li>List inside div</li>
+        <li>List inside div</li>
+        <li>List inside div</li>
+      </ul>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".panel")
+          .on("click", function () {
+            alert("You clicked on the panel element.");
+          })
+          .children()
+          .on("click", function (e) {
+            e.stopPropagation();
+          });
+      });
+    </script>
+  </body>
+</html>

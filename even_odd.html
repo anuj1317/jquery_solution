@@ -1,0 +1,32 @@
+<div class="parent">
+  <!-- odd green
+    even red -->
+  <div id="1">
+    <p>odd</p>
+  </div>
+  <div id="2">
+    <p>even</p>
+  </div>
+  <div id="3">
+    <p>odd</p>
+  </div>
+  <div id="4">
+    <p>even</p>
+  </div>
+  <div id="5">
+    <p>odd</p>
+  </div>
+  <div id="6">
+    <p>even</p>
+  </div>
+</div>
+<script
+  type="text/javascript"
+  src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+></script>
+<script>
+  $(document).ready(function () {
+    $("div:even").css("background-color", "red");
+    $("div:odd").css("background-color", "green");
+  });
+</script>

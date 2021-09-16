@@ -1,0 +1,24 @@
+<html lang="en">
+  <head>
+    <title>Question-10</title>
+  </head>
+  <body>
+    <div id="flip">Hover to slide the panel down or up</div>
+    <div class="panel">Apple</div>
+    <div class="panel">MAngo</div>
+    <div class="panel">Banana</div>
+    <div class="panel">Grapes</div>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#flip").hover(function () {
+          $(".panel").slideToggle("slow");
+        });
+      });
+    </script>
+  </body>
+</html>

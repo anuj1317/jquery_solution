@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Question 5</title>
+  </head>
+  <body>
+    <div id="main">
+      <p class="target">this is a pararagraph</p>
+    </div>
+    <div id="notmain">
+      <p class="target">this is another paragraph</p>
+    </div>
+    <button>click to increase size</button>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $(".target").parent("#main").css("font-size", "40px");
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Assignment</title>
+  </head>
+
+  <body>
+    <div class="qstn17">
+      <button class="qstn17"></button> <br />
+      <br />
+    </div>
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    var carArray = ["./img2.jpeg", "./img3.jpeg", "/coffee.jpg"];
+    var i = 0;
+
+    $(".qstn17")
+      .css("background-image", "url(" + carArray[i] + ")")
+      .height(300)
+      .width(300);
+    $("#qst");
+    setInterval(function () {
+      i++;
+      if (i == carArray.length) {
+        i = 0;
+      }
+      $(".qstn17").fadeOut("slow", function () {
+        $(this).css("background-image", "url(" + carArray[i] + ")");
+        $(this).fadeIn("slow");
+      });
+    }, 3000);
+  </script>
+</html>
